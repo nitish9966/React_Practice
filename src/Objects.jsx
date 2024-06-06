@@ -5,13 +5,13 @@ function Objects(){
     const [object,setObject]=useState({year:2024,make:"Ford",model:"Mustang"})
 
     function handleYear(event){
-        setObject({...object,year:event.target.value})
+        setObject(o=>({...o,year:event.target.value}))
     }
     function handleMake(event){
-        setObject({...object,make:event.target.value})
+        setObject(o=>({...o,make:event.target.value}))
     }
     function handleModel(event){
-        setObject({...object,model:event.target.value})
+        setObject(o=>({...o,model:event.target.value}))
     }
 
     return(
